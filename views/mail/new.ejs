@@ -1,0 +1,11 @@
+<%- include('../header', {title: 'メール'}) %>
+  <form method="post" action="/mail/send">
+    <p>タイトル</p>
+    <input type="text" name="title"><br>
+    <p>本文</p>
+    <input type="text" name="body"><br>
+    <input type="hidden" name="_csrf" value="<%= csrftoken %>">
+    <input type="submit" value="メールを送信">
+  </form>
+  <p><a href="/mail">トップに戻る</p>
+<%- include('../footer') %>

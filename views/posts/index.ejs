@@ -1,0 +1,18 @@
+<%- include('../header', {title: 'ブログ'}) %>
+
+<ul>
+  <% for (var i=0; i<posts.length; i++) { %>
+  <li>
+    <a href="/posts/<%= i %>"><%= posts[i].title %></a>
+    <a href="/posts/<%= i %>/edit">[記事を編集]</a>
+    <form method="post" action="/posts/<%= i %>?_method=DELETE">
+      <input type="submit" value="記事を削除">
+      <input type="hidden" name="id" value="<%= i %>">
+      <input type="hidden" name="_csrf" value="<%= csrftoken %>">
+    </form>
+  </li>
+  <% } %>
+  <p><a href="/posts/new">新規記事作成</a></p>
+</ul>
+
+<% include ../footer %>

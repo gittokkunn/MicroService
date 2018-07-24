@@ -1,0 +1,3 @@
+mongodb
+
+mysql8.0はnodeのドライバでは扱いきれないので，mongodbを使用

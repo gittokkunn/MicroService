@@ -1,0 +1,14 @@
+<%- include('../header', {title: 'SHOWROOM'}) %>
+
+  <form method="post" action="/showroom/nortification">
+    <div>
+      <p>配信者ID</p>
+      <input type="text" name="id"><br>
+      <p>更新通知をする場合：1，しない場合：0</p>
+      <input type="text" name="status"><br>
+    </div>
+    <input type="hidden" name="_csrf" value="<%= csrftoken %>">
+    <input type="submit" value="更新通知設定を反映">
+  </form>
+  <p><a href="/showroom">トップに戻る</p>
+<% include ../footer %>

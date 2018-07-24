@@ -1,0 +1,9 @@
+<%- include('../header', {title: 'SHOWROOM'}) %>
+
+  <ul>
+    <% for (var i=0;i<files.length;i++) { %>
+    <li><a href="/showroom/<%= files[i] %>"><%= files[i] %></a></li>
+    <% } %>
+  </ul>
+  <p><a href="/showroom">トップに戻る</p>
+<% include ../footer %>

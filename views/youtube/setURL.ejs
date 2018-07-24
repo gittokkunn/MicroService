@@ -1,0 +1,14 @@
+<%- include('../header', {title: 'Youtube'}) %>
+
+  <form method="post" action="/youtube/download">
+    <div>
+      <p>URL</p>
+      <input type="text" name="url"><br>
+      <p>ファイル名</p>
+      <input type="text" name="filename"><br>
+    </div>
+    <input type="hidden" name="_csrf" value="<%= csrftoken %>">
+    <input type="submit" value="ダウンロードする">
+  </form>
+  <p><a href="/youtube">トップに戻る</p>
+<% include ../footer %>

@@ -1,0 +1,12 @@
+<%- include('../header', {title: '動画アップロード'}) %>
+
+  <ul>
+    <% for (var i=0; i<videos.length; i++) { %>
+    <li>
+      <a href="/videos/<%= videos[i].filename %>"><%= videos[i].filename %></a>
+    </li>
+    <% } %>
+  </ul>
+  <p><a href="/videos/select">動画アップロード</p>
+  <p><a href="/videos">トップに戻る</p>
+<% include ../footer %>

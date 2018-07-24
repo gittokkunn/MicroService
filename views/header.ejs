@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-box">
+        <i id="open_menu" class="fas fa-bars open-button"></i>
+          <nav id="menu">
+            <div class="menu-item-box">
+              <i id="close_menu" class="fas fa-times fa-2x"></i>
+              <ul class="menu-item-list">
+                <%- include('menu') %>
+              </ul>
+            </div>
+          </nav>
+        <h1><%= title %></h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">

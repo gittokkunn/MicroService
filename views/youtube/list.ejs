@@ -1,0 +1,9 @@
+<%- include('../header', {title: 'Youtube'}) %>
+
+  <ul>
+    <% for (var i=0;i<files.length;i++) { %>
+    <li><a href="/youtube/<%= files[i] %>"><%= files[i] %></a></li>
+    <% } %>
+  </ul>
+  <p><a href="/youtube">トップに戻る</p>
+<% include ../footer %>

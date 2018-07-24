@@ -1,0 +1,9 @@
+<%- include('../header', {title: '動画アップロード'}) %>
+
+  <form method="post" action="/videos/upload" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="hidden" name="_csrf" value="<%= csrftoken %>">
+    <input type="submit" value="動画をアップロード">
+  </form>
+  <p><a href="/videos">トップに戻る</p>
+<% include ../footer %>

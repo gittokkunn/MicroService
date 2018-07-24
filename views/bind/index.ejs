@@ -1,0 +1,16 @@
+<%- include('../header', {title: '文字列連結'}) %>
+  <ul>
+    <% for (var i=0;i<binds.length;i++) { %>
+    <li><%= binds[i].message %></li>
+    <% } %>
+  </ul>
+  <form method="post" action="/bind/proccall">
+    <p>文字列１</p>
+    <input type="text" name="title"><br>
+    <p>文字列２</p>
+    <input type="text" name="body"><br>
+    <input type="hidden" name="_csrf" value="<%= csrftoken %>">
+    <input type="submit" value="文字列を連結する">
+  </form>
+  <p><a href="/bind">トップに戻る</p>
+<% include ../footer %>

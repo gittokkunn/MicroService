@@ -1,0 +1,141 @@
+/* small screen */
+
+body {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  background: #f8f8f8;
+  font-size: 14px;
+  font-family: Verdana, sans-sans-serif;
+  margin: 0 auto;
+  color: #333;
+}
+
+  ul.main-list {
+    list-style: none;
+    font-size: 18px;
+  }
+
+  .main-list a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  header h1 {
+    font-size: 28px;
+    font-weight: normal;
+  }
+  #menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 9);
+    color: #fff;
+    display: none;
+  }
+
+  .menu-item-box {
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: left;
+    width: 90%;
+    max-width: 1080px;
+  }
+
+  #menu.shown {
+    display: block;
+  }
+
+  #menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  #menu a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #menu li {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-bottom: 1px #cccc solid;
+  }
+
+  #open_menu {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #close_menu {
+    float: right;
+    cursor: pointer;
+  }
+
+  div.content {
+    text-align: left;
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  video {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 60px 0;
+    color: #cccc;
+  }
+    .footer-backButton {
+      width: 150px;
+      margin: 0 auto;
+      padding: 5px 10px;
+      background-color: black;
+    }
+    .footer-backButton a {
+      text-decoration: none;
+      color: white;
+    }
+    .footer-copyRight {
+      margin: 10px auto;
+    }
+
+  /* midium screen */
+  @media (min-width: 570px) {
+  }
+
+  /* large screen */
+  @media (min-width: 912px) {
+    container {
+      width: 820px;
+    }
+  }
+
+  /* fontawsomeの設定 */
+  i.youtube-icon {
+    color: red;
+  }
+  i.twitter-icon {
+    color: blue;
+  }
+  i.line-icon {
+    color: green;
+  }
+  /* i.open-button {
+    color: black;
+  } */
