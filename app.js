@@ -13,8 +13,6 @@ var express        = require('express'),
 
 // Routes
 var main = require('./routes/main'),
-    post = require('./routes/post'),
-    member = require('./routes/member'),
     bind = require('./routes/bind'),
     video = require('./routes/video'),
     mail = require('./routes/mail'),
