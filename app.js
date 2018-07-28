@@ -60,24 +60,20 @@ app.use(express.static('public'));
 
 // ホーム
 app.get('/', function(req, res) {
-  res.render('index.ejs', {title: 'マイクロサービス'});
+  res.render('index.ejs', {title: 'Webアプリ'});
 });
 
 // メインページ
 app.get('/main', main.index);
 
 // ブログ
-app.get('/posts', post.index);
-app.get('/posts/:id([0-9]+)', post.show);
-app.get('/posts/new', post.new);
-app.post('/posts/create', post.create);
-app.get('/posts/:id/edit', post.edit);
-app.put('/posts/:id', post.update);
-app.delete('/posts/:id', post.destroy);
-
-// メンバー紹介
-app.get('/members', member.index);
-app.get('/members/:id([0-9]+)', member.show);
+//app.get('/posts', post.index);
+//app.get('/posts/:id([0-9]+)', post.show);
+//app.get('/posts/new', post.new);
+//app.post('/posts/create', post.create);
+//app.get('/posts/:id/edit', post.edit);
+//app.put('/posts/:id', post.update);
+//app.delete('/posts/:id', post.destroy);
 
 // 文字列連結
 app.get('/bind', bind.index);
