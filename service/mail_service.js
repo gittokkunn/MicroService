@@ -12,9 +12,9 @@ var smtpConfig = {
     service: 'Gmail',
     auth: {
         host: 'smtp.gmail.com',
-        user: 's.tkh0215@gmail.com',
+        user: '********@gmail.com',
         secure: true,
-        pass: 'O215o215',
+        pass: '********',
         port: 465
     }
 };
@@ -22,10 +22,10 @@ var smtpConfig = {
 // メール設定
 function create_mail_opt(data) {
   // TODO: ユーザ対応
-  var to = 'user <s_tkh0215@yahoo.co.jp>';
+  var to = 'user <********@yahoo.co.jp>';
   //メールの内容
   var mailOpt = {
-      from: 'admin <s.tkh0215@gmail.com>',
+      from: 'admin <********@gmail.com>',
       to: to,
       subject: data['title'],
       html: data['body'] //HTMLタグが使えます
